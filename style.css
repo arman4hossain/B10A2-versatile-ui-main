@@ -1,0 +1,173 @@
+@import url('https://fonts.cdnfonts.com/css/miama');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Body Section */
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 37px 190px;
+
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* Header Navbar */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    color: 2.25;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px 20px;
+    padding-left: 4px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+#span {
+    background-color: rgb(230, 83, 60);
+    padding: 8px 20px;
+    border-radius: 46px;
+    font-weight: 600;
+}
+
+/* Header Content */
+
+.cover-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-content {
+    display: block;
+    width: 520px;
+}
+
+.header-content h3 {
+    font-size: 4.875rem;
+    line-height: 120%;
+    font-weight: 900;
+    margin-bottom: 28px;
+
+}
+
+.header-content h3>span {
+    font-family: "Miama", sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 1%;
+}
+
+.header-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.header-content-button {
+    display: flex;
+    gap: 14px;
+}
+
+.header-content-button a {
+    font-size: 1rem;
+    font-weight: 600;
+    background: #E6533C;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 42px;
+}
+
+#download-app {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 42px;
+}
+
+
+/* Header Pic */
+.header-pic {
+    position: relative;
+}
+
+.header-pic img {
+    display: flex;
+    width: 349px;
+    height: 580px;
+}
+
+.free-videos {
+    width: 135px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.163);
+    padding: 16px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card h3 {
+    margin: 0px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.glass-card p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.tuto-videos {
+    width: 130px;
+    position: absolute;
+    top: 430px;
+    left: -100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(48, 48, 48, 0.54);
+}
+
+.tuto-videos img {
+    width: 40px;
+    height: 40px;
+}
+
+.tuto-videos h3 {
+    font-size: 1.5rem;
+}
+
+/* Habits Change Section */
+.header-habits {
+    
+}
