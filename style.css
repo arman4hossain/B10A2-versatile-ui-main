@@ -15,6 +15,19 @@ body a {
     text-decoration: none;
 }
 
+main h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0px;
+}
+
+main p {
+    color: rgba(255, 255, 255, 0.497);
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
 /* Header Navbar */
 
 .nav-bar {
@@ -168,6 +181,86 @@ body a {
 }
 
 /* Habits Change Section */
-.header-habits {
-    
+
+.Habits-change {
+    margin: 100px 0px;
 }
+
+.header-habits {
+    margin: 0px 290px;
+    align-items: center;
+    text-align: center;
+}
+
+.Habits-change h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.Habits-change p {
+    letter-spacing: 1px;
+    margin-bottom: 58px;
+}
+
+.habits-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+
+.habits img {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+/* Running Section */
+
+.running {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 32px;
+    padding-left: 54px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+
+.running-text {
+    width: 445px;
+}
+
+.running-text h2 {
+    margin-bottom: 14px;
+}
+
+
+.running-text p {
+    letter-spacing: 0.5px;
+    line-height: 24px ;
+}
+
+.running-text a {
+    margin-top: 34px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #E6533C;
+    color: white;
+    padding: 16px 70px;
+    border-radius: 42px;
+}
+
+.running-image {
+    width: 366px;
+    height: 312px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+}
+
+.running-image img {
+    transform: translate(-48%, -25%) scale(.75);
+}
+
