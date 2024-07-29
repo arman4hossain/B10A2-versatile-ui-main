@@ -38,6 +38,7 @@ main p {
     margin-top: 40px;
 }
 
+
 .brand h1 {
     color: 2.25;
     font-style: italic;
@@ -52,12 +53,18 @@ main p {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: 4px 20px;
-    padding-left: 4px;
+    padding-left: 10px;
 }
 
 .nav-list a {
     text-decoration: none;
     color: white;
+}
+
+.nav-list a:hover {
+    background-color: rgb(230, 83, 60);
+    padding: 8px 10px;
+    border-radius: 46px;
 }
 
 #span {
