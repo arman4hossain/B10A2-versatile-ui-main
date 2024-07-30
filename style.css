@@ -32,12 +32,16 @@ main p {
 /* Header Navbar */
 
 .nav-bar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
 }
 
+.burger {
+    display: none;
+}
 
 .brand h1 {
     color: 2.25;
@@ -132,6 +136,8 @@ main p {
 /* Header Pic */
 .header-pic {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .header-pic img {
@@ -202,8 +208,6 @@ main p {
 }
 
 .Habits-change h2 {
-    font-size: 3rem;
-    font-weight: 900;
     margin-bottom: 14px;
 }
 
@@ -272,6 +276,10 @@ main p {
 
 .running-image img {
     transform: translate(-48%, -25%) scale(.75);
+}
+
+.running-image-mob {
+    display: none;
 }
 
 /* Trainning Section */
@@ -395,7 +403,7 @@ main p {
 .bmi-main {
     background-color: rgb(34, 34, 34);
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     padding: 0px 190px;
 }
 
@@ -407,7 +415,6 @@ main p {
 
 .bmi-chart {
     margin: 50px 0px;
-    
     width: 443px;
 }
 
@@ -435,11 +442,12 @@ main p {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
 }
-
 .calculate {
     margin: 50px 0px;
-    width: 577px;
-    margin-left: 140px;
+    width: 90%;
+    max-width: 577px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .calculate h3 {
@@ -450,12 +458,10 @@ main p {
     margin: 14px 0px 34px 0px;
 }
 
-
 .form-row form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-
 }
 
 .calculate form>input,
@@ -478,7 +484,7 @@ main p {
 }
 
 .calculate button {
-    padding: 16px 70px ;
+    padding: 16px 70px;
     font-size: 1.1rem;
     color: white;
     font-weight: 600;
@@ -494,6 +500,7 @@ main p {
 .our-team {
     margin: 100px 0px;
 }
+
 .header-team {
     text-align: center;
 }
@@ -507,7 +514,7 @@ main p {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgba(255, 255, 255, 0.1);
     gap: 20px;
-    padding: 20px ;
+    padding: 20px;
     border-radius: 20px;
 }
 
@@ -550,7 +557,7 @@ footer {
 
 .brand-footer h1 {
     color: #E6533C;
-    font-weight: 4rem;
+    font-size: 4rem;
     font-style: italic;
 }
 
@@ -567,7 +574,7 @@ footer {
 .get-start a,
 .important-link a {
     display: grid;
-    margin:20px 0px ;
+    margin: 20px 0px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -575,6 +582,277 @@ footer {
     margin: 0px 190px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
-    padding: 35px 0px ;
+    padding: 35px 0px;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Responsive CSS Starts */
+
+@media screen and (max-width: 600px) {
+
+    /* Body and Main Section */
+
+    body {
+        margin: 0px 20px;
+
+    }
+
+    main {
+        margin: 40px 0px;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    /* Header and Nav */
+
+    .burger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .cover-header {
+        display: block;
+    }
+
+    .header-content {
+        width: 350px;
+    }
+
+    .header-content h3 {
+        width: 100%;
+        font-size: 2rem;
+
+    }
+
+    .header-content h3>span {
+        font-size: 4rem;
+    }
+
+    .header-content-button a {
+        padding: 16px 20px;
+    }
+
+    .header-content p {
+        width: 350px;
+    }
+
+    .glass-card {
+        width: 80px;
+    }
+
+
+    .glass-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .glass-card p {
+        font-size: 0.5rem;
+    }
+
+    .free-videos {
+        padding: 10px 14px;
+        left: 60%;
+        top: 15%;
+    }
+
+    .tuto-videos {
+        width: 85px;
+        padding: 10px 10px;
+        left: 5%;
+        top: 45%;
+    }
+
+    .tuto-videos h3 {
+        font-size: 1rem;
+    }
+
+    .tuto-videos img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Habit Change Section */
+    .header-habits {
+        margin: 0px 40px;
+    }
+
+    .habits-list {
+        margin: 0 auto;
+        display: block;
+        width: 230px;
+    }
+
+    .habits h3 {
+        margin: 20px 0px 3px;
+    }
+
+    /* Running Section */
+
+    .running {
+        display: block;
+        padding: 20px ;
+    }
+
+    .running-text {
+        width: 100%;
+    }
+
+    .running-image {
+        display: none;
+    }
+
+    .running-image-mob {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .running-image-mob img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    /* Trainning Section */
+
+    .Trainnings {
+        margin: 50px 0px;
+        width: 100%;
+    }
+
+    .train-head {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .train-head p {
+        margin-top: 20px;
+    }
+
+
+    .extra-card {
+        display: none;
+    }
+
+    .trainning-card {
+        position: relative;
+        height: 150px;
+    }
+
+    .trainning-pic-row1 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trainning-pic-row2 {
+        grid-template-columns: .8fr 1fr;
+    }
+
+    .text-ex1 {
+        top: 80%;
+        left: 10%;
+    }
+
+    .text-ex4 {
+        top: 70%;
+        left: 10%;
+    }
+
+    .text-ex5 {
+        top: 70%;
+        left: 10%;
+    }
+
+    /* BMI Calculator */
+
+    .bmi-calculator {
+        margin: 0px -20px;
+        width: 100% ;
+    }
+
+    .bmi-head {
+        margin: 0px 20px;
+        width: 353px;
+        margin-bottom: 50px;
+    }
+
+    .bmi-main {
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+    }
+
+    .bmi-main h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .bmi-chart {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .form-row {
+        display: flex;
+    }
+
+
+    /* Our Team Section */
+    .our-team {
+        margin: 50px 0px;
+    }
+
+    .header-team p {
+        margin: 15px 50px 30px;
+        line-height: 1.5rem;
+    }
+
+    .team-list {
+        display: block;
+        justify-content: center;
+    }
+
+    .trainer-card img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .trainer-name {
+        top: 75%;
+        left: 10%;
+    }
+
+    /* Footer Section */
+
+    footer {
+        margin: 0px -20px;
+    }
+
+    .footer-content {
+        display: block;
+        justify-content: space-between;
+        padding: 20px 20px;
+        margin-bottom: 50px;
+    }
+
+    .brand-footer h1 {
+        margin: 20px 0px;
+    }
+
+    .brand-footer p {
+        width: 100%;
+    }
+
+    .site-rights {
+        margin: 0px 20px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 35px 0px;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
 }
