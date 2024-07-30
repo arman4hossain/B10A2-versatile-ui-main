@@ -795,8 +795,24 @@ footer {
         margin-bottom: 0px;
     }
 
-    .form-row {
-        display: flex;
+    .form-row form {
+        grid-template-columns: 1fr 1fr;
+        padding-right: 20px;
+    }
+
+    .calculate input,
+    .calculate select {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .form-row input #iframe {
+        width: 10px;
+    }
+
+    .calculate button {
+        width: 100%;
+        padding: 16px 0;
     }
 
 
