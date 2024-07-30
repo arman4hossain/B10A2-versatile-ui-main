@@ -444,10 +444,8 @@ main p {
 }
 .calculate {
     margin: 50px 0px;
-    width: 90%;
+    width: 100%;
     max-width: 577px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .calculate h3 {
@@ -781,8 +779,7 @@ footer {
 
     .bmi-main {
         padding: 10px 20px;
-        display: block;
-        width: 100%;
+        grid-template-columns: 1fr;
     }
 
     .bmi-main h3 {
@@ -795,24 +792,14 @@ footer {
         margin-bottom: 0px;
     }
 
+    .calculate {
+        margin: 50px 0px;
+        width: 100%;
+        max-width: 300px;
+    }
+
     .form-row form {
-        grid-template-columns: 1fr 1fr;
-        padding-right: 20px;
-    }
-
-    .calculate input,
-    .calculate select {
-        width: 100%;
-        overflow: auto;
-    }
-
-    .form-row input #iframe {
-        width: 10px;
-    }
-
-    .calculate button {
-        width: 100%;
-        padding: 16px 0;
+        grid-template-columns: 1fr ;
     }
 
 
