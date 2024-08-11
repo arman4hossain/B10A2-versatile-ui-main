@@ -446,7 +446,7 @@ main p {
 .calculate {
     margin: 50px 0px;
     width: 100%;
-    max-width: 577px;
+    max-width: 600px;
 }
 
 .calculate h3 {
@@ -458,6 +458,7 @@ main p {
 }
 
 .form-row form {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -472,6 +473,7 @@ main p {
     border: 0px;
     border-radius: 8px;
     padding: 12px 20px;
+
 }
 
 .calculate form option {
@@ -881,40 +883,47 @@ footer {
 
     .bmi-calculator {
         margin: 0px -20px;
-        width: 100%;
     }
 
     .bmi-head {
-        margin: 0px 20px;
-        width: 353px;
-        margin-bottom: 50px;
+        margin: 20px;
+        width: 350px;
     }
 
     .bmi-main {
-        padding: 10px 20px;
+        width: 100%;
         grid-template-columns: 1fr;
-    }
-
-    .bmi-main h3 {
-        font-size: 1rem;
-        margin-bottom: 20px;
+        padding: 0px 20px;
     }
 
     .bmi-chart {
         width: 100%;
-        margin-bottom: 0px;
     }
 
     .calculate {
-        margin: 50px 0px;
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
     }
 
-    .form-row form {
-        grid-template-columns: 1fr;
+    .calculate h3,
+    .calculate p {
+        width: 350px;
     }
 
+    .calculate form>input,
+    .calculate form>select {
+        padding: 12px 15px;
+        max-width: 140px;
+
+    }
+
+    #gender {
+        max-width: 180px;
+    }
+
+    #Activity-factor {
+        max-width: 450px;
+    }
 
     /* Our Team Section */
     .our-team {
