@@ -891,13 +891,14 @@ footer {
     }
 
     .bmi-main {
+        max-width: 425px;
         width: 100%;
         grid-template-columns: 1fr;
         padding: 0px 20px;
     }
 
     .bmi-chart {
-        width: 100%;
+        max-width: 425px;
     }
 
     .calculate {
@@ -922,7 +923,7 @@ footer {
     }
 
     #Activity-factor {
-        max-width: 450px;
+        max-width: 350px;
     }
 
     /* Our Team Section */
